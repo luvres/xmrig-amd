@@ -1,4 +1,4 @@
-## Xmrig AMD cryptonight (default) or cryptonight-lite
+## Xmrig AMDGPU cryptonight (default) or cryptonight-lite
 -----
 
 ### Run
