@@ -11,6 +11,8 @@ docker run -ti --rm --name Xmrig-amd \
 izone/xmrig-amd
 ```
 ```
+```
+```
 docker run -ti --rm --name Xmrig-amd \
 --device /dev/kfd \
 --device /dev/dri \
