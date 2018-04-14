@@ -1,4 +1,4 @@
-FROM izone/xmrig-amd:amdgpu-17.40.2712
+FROM izone/amdgpu:17.40.2712
 MAINTAINER Leonardo Loures <luvres@hotmail.com>
 
 ENV \
