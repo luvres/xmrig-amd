@@ -6,16 +6,14 @@
 #### Simpleco.in - Default
 ```
 docker run -ti --rm --name Xmrig-amd \
---device /dev/kfd \
---device /dev/dri \
+--device /dev/kfd --device /dev/dri \
 izone/xmrig-amd
 ```
 ```
 ```
 ```
 docker run -ti --rm --name Xmrig-amd \
---device /dev/kfd \
---device /dev/dri \
+--device /dev/kfd --device /dev/dri \
 -e DONATE="1" \
 -e ALGORITHM="cryptonight" \
 -e POOL="simpleco.in" \
@@ -29,8 +27,7 @@ izone/xmrig-amd
 #### Nicehash (cryptonight)
 ```
 nvidia-docker run -ti --rm --name Xmrig-amd-nicehash \
---device /dev/kfd \
---device /dev/dri \
+--device /dev/kfd --device /dev/dri \
 -e DONATE="1" \
 -e ALGORITHM="cryptonight" \
 -e POOL="cryptonight.eu.nicehash.com" \
@@ -43,8 +40,7 @@ izone/xmrig-amd
 #### Minergate XMR
 ```
 nvidia-docker run -ti --rm --name Xmrig-amd-Minergate \
---device /dev/kfd \
---device /dev/dri \
+--device /dev/kfd --device /dev/dri \
 -e DONATE="1" \
 -e ALGORITHM="cryptonight" \
 -e POOL="xmr.pool.minergate.com" \
@@ -57,8 +53,7 @@ izone/xmrig-amd
 #### XMR Monero
 ```
 docker run -ti --rm --name Xmrig-amd-XMR \
---device /dev/kfd \
---device /dev/dri \
+--device /dev/kfd --device /dev/dri \
 -e DONATE="1" \
 -e ALGORITHM="cryptonight" \
 -e POOL="pool.supportxmr.com" \
