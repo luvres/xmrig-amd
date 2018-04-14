@@ -1,0 +1,20 @@
+FROM ubuntu:xenial
+MAINTAINER Leonardo Loures <luvres@hotmail.com>
+
+RUN \
+	cd \
+	&& apt-get update \
+    && apt-get --no-install-recommends install -y \
+		ca-certificates \
+		curl \
+		build-essential \
+		cmake \
+		libmicrohttpd-dev \
+		libuv1-dev \
+		ocl-icd-opencl-dev \
+  \
+    && curl -L -O https://github.com/xmrig/xmrig-amd/archive/v2.5.2.tar.gz \
+    && tar -xvf v2.5.2.tar.gz \
+    && cd xmrig-amd-2.5.2 \
+    && cmake . \
+    && make
