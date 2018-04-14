@@ -71,9 +71,6 @@ izone/xmrig-amd
 -----
 #### Build
 ```
-docker build -t izone/xmrig-amd:amdgpu-17.40.2712 -f Dockerfile_amdgpu .
-```
-```
 docker build -t izone/xmrig-amd .
 ```
 ```
