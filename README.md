@@ -5,14 +5,14 @@
 
 #### Simpleco.in - Default
 ```
-docker run -ti --rm --name Xmrig-amd \
+docker run -ti --rm --name Xmrig-amd-doge \
 --device /dev/kfd --device /dev/dri \
 izone/xmrig-amd
 ```
 ```
 ```
 ```
-docker run -ti --rm --name Xmrig-amd \
+docker run -ti --rm --name Xmrig-amd-doge \
 --device /dev/kfd --device /dev/dri \
 -e DONATE="1" \
 -e ALGORITHM="cryptonight" \
