@@ -13,8 +13,8 @@ RUN \
 		libuv1-dev \
 		ocl-icd-opencl-dev \
   \
-    && curl -L -O https://github.com/xmrig/xmrig-amd/archive/v2.5.2.tar.gz \
-    && tar -xvf v2.5.2.tar.gz \
-    && cd xmrig-amd-2.5.2 \
+    && curl -L -O https://github.com/xmrig/xmrig-amd/archive/v2.6.1.tar.gz \
+    && tar -xvf v2.6.1.tar.gz \
+    && cd xmrig-amd-2.6.1 \
     && cmake . \
     && make
