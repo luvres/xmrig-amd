@@ -1,4 +1,4 @@
-## Xmrig AMDGPU cryptonight (default) or cryptonight-lite
+## Xmrig AMDGPU cryptonight (default), cryptonight_v7 or cryptonight-lite
 -----
 
 ### Run
@@ -60,6 +60,32 @@ docker run -ti --rm --name Xmrig-amd-XMR \
 -e PORT="5555" \
 -e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
 -e USERPASS="fx8350" \
+izone/xmrig-amd
+```
+
+#### BBS Coin (cryptonight_v7)
+##### Web Wallet
+```
+docker run -ti --rm --name Xmrig-amd-BBS \
+--device /dev/kfd --device /dev/dri \
+-e DONATE="1" \
+-e ALGORITHM="cryptonight_v7" \
+-e POOL="pool.bbscoin.xyz" \
+-e PORT="5555" \
+-e USER="fyTo1z3Cw961pVVyxjmYGjW3hXipzT6q3gzYCnWpBGAv7tYYgTdt4WfKEBpzjVZ8UgjFAn3iLBnoCB8VzNjpPVjL25J8AyW3E" \
+-e USERPASS="x" \
+izone/xmrig-amd
+```
+##### Local Wallet
+```
+docker run -ti --rm --name Xmrig-amd-BBS \
+--device /dev/kfd --device /dev/dri \
+-e DONATE="1" \
+-e ALGORITHM="cryptonight_v7" \
+-e POOL="pool.bbscoin.xyz" \
+-e PORT="5555" \
+-e USER="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
+-e USERPASS="x" \
 izone/xmrig-amd
 ```
 
